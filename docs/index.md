@@ -1,5 +1,5 @@
 # Overview
-The following table outlines each of the MOOCs I have taken. For an overview, please note the following: 
+The following table outlines each of the MOOCs I have taken. Syllabi from the courses follow. 
 
 <style>/* info (hed, dek, source, credit) */
 .rg-container {
