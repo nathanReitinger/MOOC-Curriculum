@@ -270,37 +270,37 @@ This Specialization covers intermediate topics in software development. You’ll
 <h3 id="and-a-nested-list"><span style="font-size: 10pt;">Syllabus:</span></h3>
 <h3><span style="font-size: 10pt;"><strong>Course 1: Object Oriented Programming in Java</strong></span></h3>
 <ul>
-<li class="course-title"><span style="font-size: 10pt;">Week 1</span>
+<li class="course-title">Week 1
 <ul>
 <li class="course-title">
-<div class="module-name"><span style="font-size: 10pt;">Welcome and Project Overview: Visualizing Data</span></div>
+<div class="module-name">Welcome and Project Overview: Visualizing Data
 </li>
-<li class="course-title"><span style="font-size: 10pt;">Objects, Memory Models, and Scope</span></li>
+<li class="course-title">Objects, Memory Models, and Scope
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 10pt;">Week 2</span>
+<li class="course-title">Week 2
 <ul>
-<li class="course-title"><span style="font-size: 10pt;">Graphical output: Creating GUIs and Displaying Data</span></li>
+<li class="course-title">Graphical output: Creating GUIs and Displaying Data
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 10pt;">Week 3</span>
+<li class="course-title">Week 3
 <ul>
-<li class="course-title"><span style="font-size: 10pt;">Inheritance</span></li>
+<li class="course-title">Inheritance
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 10pt;">Week 4</span>
+<li class="course-title">Week 4
 <ul>
-<li class="course-title"><span style="font-size: 10pt;">GUIs: Responding to User Events</span></li>
+<li class="course-title">GUIs: Responding to User Events
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 10pt;">Week 5</span>
+<li class="course-title">Week 5
 <ul>
-<li class="course-title"><span style="font-size: 10pt;">Searching and Sorting: From Code to Algorithms</span></li>
+<li class="course-title">Searching and Sorting: From Code to Algorithms
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 10pt;">Week 6</span>
+<li class="course-title">Week 6
 <ul>
-<li class="course-title"><span style="font-size: 10pt;">Finishing Up</span></li>
+<li class="course-title">Finishing Up
 </ul>
 </li>
 </ul>
