@@ -268,43 +268,44 @@ Introduction to the intellectual enterprises of computer science and the art of 
 This Specialization covers intermediate topics in software development. You’ll learn object-oriented programming principles that will allow you to use Java to its full potential, and you’ll implement data structures and algorithms for organizing large amounts of data in a way that is both efficient and easy to work with. You’ll also practice critically evaluating your own code, and you’ll build technical communication skills that will help you prepare for job interviews and collaborative work as a software engineer.
 
 <h3 id="and-a-nested-list">Syllabus:</h3>
-<div class="course-title"><strong>Course 1: Object Oriented Programming in Java</strong></div>
+<h3><span style="font-size: 8pt;"><strong>Course 1: Object Oriented Programming in Java</strong></span></h3>
 <ul>
-<li class="course-title">Week 1
+<li class="course-title"><span style="font-size: 8pt;">Week 1</span>
 <ul>
 <li class="course-title">
-<div class="module-name">Welcome and Project Overview: Visualizing Data</div>
+<div class="module-name"><span style="font-size: 8pt;">Welcome and Project Overview: Visualizing Data</span></div>
 </li>
-<li class="course-title">Objects, Memory Models, and Scope</li>
+<li class="course-title"><span style="font-size: 8pt;">Objects, Memory Models, and Scope</span></li>
 </ul>
 </li>
-<li class="course-title">Week 2
+<li class="course-title"><span style="font-size: 8pt;">Week 2</span>
 <ul>
-<li class="course-title">Graphical output: Creating GUIs and Displaying Data</li>
+<li class="course-title"><span style="font-size: 8pt;">Graphical output: Creating GUIs and Displaying Data</span></li>
 </ul>
 </li>
-<li class="course-title">Week 3
+<li class="course-title"><span style="font-size: 8pt;">Week 3</span>
 <ul>
-<li class="course-title">Inheritance</li>
+<li class="course-title"><span style="font-size: 8pt;">Inheritance</span></li>
 </ul>
 </li>
-<li class="course-title">Week 4
+<li class="course-title"><span style="font-size: 8pt;">Week 4</span>
 <ul>
-<li class="course-title">GUIs: Responding to User Events</li>
+<li class="course-title"><span style="font-size: 8pt;">GUIs: Responding to User Events</span></li>
 </ul>
 </li>
-<li class="course-title">Week 5
+<li class="course-title"><span style="font-size: 8pt;">Week 5</span>
 <ul>
-<li class="course-title">Searching and Sorting: From Code to Algorithms</li>
+<li class="course-title"><span style="font-size: 8pt;">Searching and Sorting: From Code to Algorithms</span></li>
 </ul>
 </li>
-<li class="course-title">Week 6
+<li class="course-title"><span style="font-size: 8pt;">Week 6</span>
 <ul>
-<li class="course-title">Finishing Up</li>
+<li class="course-title"><span style="font-size: 8pt;">Finishing Up</span></li>
 </ul>
 </li>
 </ul>
-<div class="course-title"><strong>Course 2:&nbsp;Data Structures and Performance</strong>
+<p><strong>Course 2:&nbsp;Data Structures and Performance</strong></p>
+<div class="course-title">
 <ul>
 <li>Week 1
 <ul>
@@ -332,7 +333,8 @@ This Specialization covers intermediate topics in software development. You’ll
 </ul>
 </li>
 </ul>
-<div class="course-title"><strong>Course 3: Advanced Data Structures in Java</strong>
+<p><strong>Course 3: Advanced Data Structures in Java</strong></p>
+<div class="course-title">
 <ul>
 <li>Week 1
 <ul>
@@ -360,7 +362,8 @@ This Specialization covers intermediate topics in software development. You’ll
 </ul>
 </li>
 </ul>
-<div class="course-title"><strong>Course 4: Mastering the Software Engineering Interview</strong>
+<p><strong>Course 4: Mastering the Software Engineering Interview</strong></p>
+<div class="course-title">
 <ul>
 <li>Week 1
 <ul>
@@ -383,6 +386,8 @@ This Specialization covers intermediate topics in software development. You’ll
 </ul>
 </li>
 </ul>
+</div>
+</div>
 </div>
 
 # Introduction to Logic
@@ -457,32 +462,32 @@ In this statistics and data analysis course, we will provide an introduction to 
 
 <h3 id="and-a-nested-list">Syllabus:</h3>
 <ul>
-<li><strong>Unit 1:</strong><strong>&nbsp;</strong><strong>Sample</strong><strong>&nbsp;</strong><strong>Space and Probability</strong>
+<li>Week&nbsp;1:&nbsp;Sample&nbsp;Space and Probability
 <ul>
-<li>Introduction to basic concepts, such as outcomes, events, sample spaces, and probability.<strong><br /></strong></li>
+<li>Introduction to basic concepts, such as outcomes, events, sample spaces, and probability.</li>
 </ul>
 </li>
-<li><strong>Unit 2: Independent Events, Conditional Probability and Bayes&rsquo; Theorem</strong>
+<li>Week&nbsp;2: Independent Events, Conditional Probability and Bayes&rsquo; Theorem
 <ul>
 <li>Introduction to independent events, conditional&nbsp;probability&nbsp;and Bayes&rsquo; Theorem with examples</li>
 </ul>
 </li>
-<li><strong>Unit 3: Random Variables,&nbsp;Probability&nbsp;and Distributions</strong>
+<li>Week&nbsp;3: Random Variables,&nbsp;Probability&nbsp;and Distributions
 <ul>
-<li>Random variables, probability mass&nbsp;functions&nbsp;and CDFs, joint distributions<strong><br /></strong></li>
+<li>Random variables, probability mass&nbsp;functions&nbsp;and CDFs, joint distributions</li>
 </ul>
 </li>
-<li><strong>Unit 4: Expected Values</strong>
+<li>Week&nbsp;4: Expected Values
 <ul>
 <li>Expected values of discrete random variables, sum of random variables and functions of random variables with lots of examples</li>
 </ul>
 </li>
-<li><strong>Unit 5: Models of Discrete Random Variables I</strong>
+<li>Week&nbsp;5: Models of Discrete Random Variables I
 <ul>
 <li>Bernoulli and Binomial random variables; Geometric random variables; Negative Binomial random variables</li>
 </ul>
 </li>
-<li><strong>Unit 6:&nbsp;</strong><strong>Models</strong><strong>&nbsp;</strong><strong>of Discrete Random Variables II</strong>
+<li>Week&nbsp;6:&nbsp;Models&nbsp;of Discrete Random Variables II
 <ul>
 <li>Poisson random variables; Hypergeometric random variables; discrete uniform random variables and counting</li>
 </ul>
