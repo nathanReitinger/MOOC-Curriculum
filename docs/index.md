@@ -264,409 +264,451 @@ Introduction to the intellectual enterprises of computer science and the art of 
 </ul></li>
 </ul>
 
-<!doctype html>
-<html>
-<head>
-    <title>
-                    CS50x 2016 Gradebook.
-            </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    
-    <link rel="stylesheet" type="text/css" href="/css/io/jquery-ui-1.8.16.custom.css" /><link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="/css/lib/vs.css" /><link rel="stylesheet" type="text/css" href="/css/global.css" /><script type="text/javascript" src="/js/lib/jquery.min.js"></script><script type="text/javascript" src="/js/lib/bootstrap.min.js"></script><script type="text/javascript" src="/js/lib/jquery-ui-1.8.16.custom.min.js"></script><script type="text/javascript" src="/js/lib/jquery.form.js"></script><script type="text/javascript" src="/js/lib/jquery.easing.1.3.js"></script><script type="text/javascript" src="/js/lib/date.js"></script><script type="text/javascript" src="/js/lib/json2.js"></script><script type="text/javascript" src="/js/lib/underscore-min.js"></script><script type="text/javascript" src="/js/lib/backbone-min.js"></script><script type="text/javascript" src="/js/lib/socket.io.min.js"></script><script type="text/javascript" src="/js/lib/xpath/xpath.js"></script><script type="text/javascript" src="/js/lib/cs50/cs50.analytics.js"></script><script type="text/javascript" src="/js/cs50.js"></script>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <script>
-        var sessid = 'CS50-585d3d41-c830-4984-bc85-6b830a010105';
-
-                    var user = {"id":"202968","mechanism_id":"1","name":"Nathan Reitinger","timezone":""}        
-                    var APP = 'gradebook';
-        
-                    var suiteId = '14';
-            var suite = {"id":"14","org_id":"1","name":"CS50x 2016","premium":true,"public":false,"slug":"cs50x\/2016"};
-        
-                    var suiteSlug = 'cs50x/2016';
-        
-                    var permissions = {"core":{"admin":false,"grantExtensions":false,"requestExtensions":false},"discuss":{"addWatchers":false,"bypassVote":false,"close":false,"createPoll":false,"deletePosts":false,"deleteReplies":false,"editOthers":false,"endorse":false,"fork":false,"manageQueue":false,"post":false,"postRestricted":false,"receiveDispatches":false,"refer":false,"view":false,"viewPrivate":false},"gradebook":{"modifyAxes":false,"view":true,"overwriteGrades":false},"spaces":{"create":false,"view":false},"submit":{"audit":false,"submit":true,"view":true},"survey":{"create":false,"manage":false,"take":false}}        
-                    var CLIENT_URL = 'http://x.sockets.cs50.com';
-            </script>
-</head>
-<body>
-    <div class="success-banner">
-        <div class="success-banner-dismiss">&times;</div> 
-        <div class="success-banner-body"></div>
-    </div>    
-            
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-                            <a class="brand" href="/gradebook/">
-                    CS50x 2016 Gradebook.
-                </a>
-                                        <ul class="product account-menu nav">
-                    <li class="product dropdown">
-                        <a href="#" class="product dropdown-toggle" data-toggle="dropdown">
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="product dropdown-menu pull-right">
-                                                                                                                                                                <li>
-                                        <a class="dropdown-brand" href="/cs50x/2016/@/submit"> 
-                                            <img src="/img/submit-large.png" />
-                                            Submit                                        </a>
-                                    </li>
-                                                                                                        <li>
-                                        <a class="dropdown-brand" href="/cs50x/2016/@/gradebook"> 
-                                            <img src="/img/gradebook-large.png" />
-                                            Gradebook                                        </a>
-                                    </li>
-                                                                                    </ul>
-                    </li>
-                </ul> 
-                        <div class="right-menu-wrapper pull-right">
-                                                                                          
-                            <ul class="suite account-menu nav">
-                                <li class="suite dropdown">
-                                    <a href="#" class="suite dropdown-toggle" data-toggle="dropdown">
-                                        <span class="login-text">
-                                                                                            CS50x 2016                                                                                                                                </span>
-                                        <b class="caret"></b>
-                                    </a>
-                                    <ul class="suite dropdown-menu">
-                                                                                                                                <li>
-                                                                                                    <a class="dropdown-brand" href="/@/cs50x/2014">
-                                                        CS50x 2014                                                    </a>
-                                                                                            </li>
-                                                                                        <li>
-                                                                                                    <a class="dropdown-brand" href="/@/cs50x/2016">
-                                                        CS50x 2016                                                    </a>
-                                                                                            </li>
-                                                                                                                        </ul>
-                                </li>
-                            </ul>
-                                             
-                    <ul class="user account-menu nav">
-                        <li class="user dropdown">
-                            <a href="#" class="user dropdown-toggle" data-toggle="dropdown">
-                                <span class="login-text">
-                                                                            Hi, Nathan!
-                                                                    </span>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="user dropdown-menu">
-                                <li>
-                                    <a href="/cs50x/2016/@/settings" class="dropdown-brand">
-                                        <img src="/img/settings-large.png"/>
-                                        Settings
-                                    </a>
-                                </li> 
-                                <li style="margin: 5px 0px;" class="divider"></li> 
-                                <li>
-                                    <a href="https://docs.google.com/spreadsheet/viewform?formkey=dENfcnpIdjlhWUQ2OVNCNjhzdU5FNkE6MQ" class="dropdown-brand" target="_blank">
-                                        <img src="/img/bug-large.png"/>
-                                        Report a Bug
-                                    </a>
-                                </li>
-                                <li style="margin: 5px 0px;" class="divider"></li> 
-                                <li>
-                                    <a href="/logout" class="dropdown-brand">
-                                        <img src="/img/logout-large.png"/>
-                                        Log out
-                                    </a>
-                                </li> 
-                            </ul>
-                        </li>
-                    </ul> 
-                            </div>    
-        </div>
-    </div>
-</div>
-<div class="impersonation-banner hidden">
-    <div class="container-fluid">
-            </div>
-</div>
-<div id="navbar-border-wrapper"><img id="navbar-border" src="/img/bottom-border.png" /></div>
-    
-    <script type="text/template" class="template" data-template="grid_header">
-<% if (key == "User") { %>
-    <% var user = item; %>
-    <span><%= user.User.name %></span>
-<% } else if (key == "Axis") { %>
-    <% var axis = item; %>
-    <span><%= axis.Axis.name %></span>
-    <span class="grid-score-type
-        <%
-            switch(axis.Axis.score_type_id) {
-                case $Gradebook.constants.NUMERIC:
-                    print(' numeric">' + (axis.Axis.points || "Numeric"));
-                    break;
-                case $Gradebook.constants.FORMULA:
-                    print(' formula">' + "Formula");
-                    break;
-                case $Gradebook.constants.OV_FORMULA:
-                    print(' oformula">' + "O. Formula");
-                    break;
-                default:
-                    print(' stfield">' + axis.ScoreType.name);
-            }
-        %>
-    </span>
-<% } %>
-</script>
-<script type="text/template" class="template" data-template="grade_group">
-<li class="group-wrapper" data-group-id="<%= group.Group.id %>">
-    <h1 class="group-header">
-        <%= group.Group.name %>
-    </h1>
-    <div class="group-info-wrapper">
-        <div class="group-views-wrapper">
-            <div class="group-view grid view-change">
-                Grid View
-                <i class="icon-th"></i>    
-            </div>
-            <a class="spreadsheet-download" href="<%= CS50.url('/gradebook/spreadsheet/download/' + group.Group.id) %>">
-                <div class="group-view download">
-                    Download Spreadsheet
-                    <i class="icon-download-alt"></i>
-                </div>
-            </a>
-            <!--div class="group-view analytics view-change">
-                Progress View
-                <i class="icon-picture"></i>    
-            </div-->
-        </div>
-        <div class="sidebar-header">
-            <span class="student-sort">
-                <span>STUDENTS</span>
-            </span>
-            <hr>
-        </div>
-        <div class="group-students">
-        </div>
-    </div>
+<table style="height: 227px; width: 644px;">
+<tbody>
+<tr style="height: 13px;">
+<td style="width: 390.625px; text-align: center; height: 13px;"><span style="font-size: 8pt;"><strong>Problem Set</strong></span></td>
+<td style="width: 10px; text-align: center; height: 13px;"><span style="font-size: 8pt;"><strong>Grade</strong></span></td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 390.625px; text-align: left; height: 13px;"><span class="axis-name no-indent" style="font-size: 8pt;">Problem Set 0</span></td>
+<td style="width: 10px; text-align: center; height: 13px;"><span style="font-size: 8pt;">1.0</span></td>
+</tr>
+<tr style="height: 673px;">
+<td style="width: 390.625px; text-align: left; height: 673px;">
+<p><span style="font-size: 8pt;">Problem Set 1</span></p>
+<ol>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1182"><span class="axis-name " style="font-size: 8pt;">Hello</span></div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1184"><span style="font-size: 8pt;"><span class="axis-name no-indent">prints "hello, world"</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
 </li>
-</script>
-<script type="text/template" class="template" data-template="gradee">
-    <div class='gradee view-change' href="#" data-gradee-id='<%= gradee.id %>'>
-        <span class="gradee-name"><%= gradee.name %></span>
-        <i class="icon-chevron-right"></i>    
-        <% var score = Math.floor(Math.random() * 20) + 80 %>
-        <!--span class="axis-overall-grade" data-score-value="<%= score %>"><%= score %></span-->    
-    </div>
-</script>
-<script type="text/template" class="template" data-template="grid_tr">
-<% if (key == "Axis") { %>
-    <tr data-axis-id="<%= item.Axis.id %>">
-        <td class="fixed-col student-name" title="<%= item.Axis.name %>">
-            <% for (var i = 0; i < depth; i++) { %>
-                &nbsp;&nbsp;&nbsp;
-            <% } %> 
-            <%= item.Axis.name %>
-        </td>
-        <%= innerHTML %>
-    </tr>
-<% } else if (key == "User") { %>
-    <tr data-user-id="<%= item.User.id %>">
-        <td class="fixed-col student-name" rel='tooltip' title="<%= item.User.name %>"><%= item.User.name %></td>
-        <%= innerHTML %>
-    </tr>
-<% } %>
-</script>
-<script type="text/template" class="template" data-template="grid_td">
-<% if (key == "Axis") { %>
-    <% if (typeof x.User.id === 'undefined') return; %>
-    <td data-user-id="<%= x.User.id %>">
-        <% var comment = $Gradebook.Widget.handleComment({
-            axis: item,
-            userId: x.User.id
-        }) %>
-        <% var text = comment.comment %>
-        <span style="display: none" class="axis-comment">
-            <div class="axis-comment-text">
-                <textarea><%= text %></textarea>
-            </div>    
-        </span>    
-        <%= $Gradebook.Widget.handleGrade({
-            axis: item,
-            userId: x.User.id,
-            classPrefix: 'grid-',
-            formulaStore: formulaStore
-        }) %>
-    </td>
-<% } else if (key == "User") { %>
-    <% if (typeof x.Axis.id === 'undefined') return; %>
-    <td data-axis-id="<%= x.Axis.id %>">
-        <% var comment = $Gradebook.Widget.handleComment({
-            axis: x,
-            userId: item.User.id
-        }) %>
-        <% var text = comment.comment %>
-        <span style="display: none" class="axis-comment">
-            <div class="axis-comment-text">
-                <textarea><%= text %></textarea>
-            </div>    
-        </span>    
-        <%= $Gradebook.Widget.handleGrade({
-            axis: x,
-            userId: item.User.id,
-            classPrefix: 'grid-',
-            formulaStore: formulaStore
-        }) %>
-    </td>
-<% } %>
-</script>
-<script type="text/template" class="template" data-template="axis_row">
-<% if (typeof item.Axis.id === 'undefined') return; %>
-<% var score = $Gradebook.Widget.handleGrade({
-    axis: item,
-    classPrefix: '',
-    userId: userId,
-    formulaStore: formulaStore
-}) %>
-<% var comment = $Gradebook.Widget.handleComment({
-    axis: item,
-    userId: userId,
-}) %>
-<% var canGrade = comment.canGrade; %>
-<% var text = comment.comment; %>
-
-<div class="axis-row-wrapper"
-
-<% if (item.Axis.hidden == "1" && !canGrade) {
-	%>
-		style="display:none"
-	<%
-} %>
-
-
-data-axis-id="<%= item.Axis.id %>">
-    <span class="axis-name <%= (item.children.length <= 0) ? 'no-indent' : '' %>">
-        <% if (item.children.length > 0) { %>
-            <div class="arrow"></div>
-        <% } %>
-	<% if (typeof item.Form.id !== 'undefined') { %>
-	    <a href="/cs50/@/gradebook/forms/get/<%= item.Form.id %>/<%= userId %>">
-	<% } %>
-        <%= item.Axis.name %>
-	<% if (typeof item.Form.id !== 'undefined') { %>
-	    </a>
-	<% } %>
-    </span>
-    <% if (item.Axis.score_type_id !== $Gradebook.constants.HEADER && 
-            item.Axis.score_type_id !== $Gradebook.constants.FORMULA && 
-            item.Axis.score_type_id !== $Gradebook.constants.OV_FORMULA) { %>
-        <% if (canGrade && text == '') { %>
-            <span class="axis-comment add">
-                <div class="btn-view-comment">
-                </div>
-                <div class="axis-comment-text">
-                    <textarea><%= text %></textarea>
-                    <button class="btn btn-mini disabled">Save</button>    
-                </div>    
-            </span>    
-        <% } else if (canGrade) { %>
-            <span class="axis-comment edit">
-                <div class="btn-view-comment">
-                </div>
-                <div class="axis-comment-text">
-                    <textarea><%= text %></textarea>
-                    <button class="btn btn-mini disabled">Save</button>    
-                </div>    
-            </span>    
-        <% } else if (text != '') { %>
-            <span class="axis-comment view">
-                <div class="btn-view-comment">
-                </div>
-                <div class="axis-comment-text">
-                    <%= text %>
-                </div>    
-            </span>    
-        <% } %>
-    <% } %>
-    <span class="axis-grade"><%= score %></span>
+</ul>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11537">
+<div class="arrow open"><span style="font-size: 8pt;">&nbsp;Water</span></div>
 </div>
-</script>
-<script type="text/template" class="template" data-template="normal_grade">
-    <% var fields = axis.ScoreType.StField; %>
-    <% if (canGrade === true) { %>
-        <div class="dropdown-wrapper">
-            <select class="<%= classPrefix %>stf-dropdown">
-                <option></option>
-                <% for (i in fields) { %>
-                    <option value="<%= fields[i].id %>"<% if (grade && fields[i].id === grade.st_field_id) { print('selected="selected"'); } %>><%= fields[i].name %></option>
-                 <% } %>
-            </select>
-        </div>
-    <% } else if (grade) { %>
-        <% for (i in fields) { %>
-            <% if (fields[i].id === grade.st_field_id) { %>
-                <input class="<%= classPrefix %>field-uneditable" value="<%= fields[i].name %>" disabled>
-            <% } %>
-        <% } %>
-    <% } %>
-</script>
-<script type="text/template" class="template" data-template="numeric_grade">
-    <% if (canGrade === true) { %>
-        <input class="<%= classPrefix %>numeric-field" value="<%= grade ? grade.points : '' %>">
-    <% }
-    else if (grade) { %>
-        <input class="<%= classPrefix %>field-uneditable" value="<%= grade ? grade.points : '' %>" disabled>
-    <% } %>
-    <%
-        if (grade.points && grade.points.charAt(0) === '=')
-            formulaStore.push({ axis: axis, userId: userId, formula: grade.points });
-    %>
-</script>
-<script type="text/template" class="template" data-template="formula_grade">
-    <% if (overridable) { %>
-        <% //XXX should allow anything from numeric to st_field?? %>
-        <% if (canGrade) { %>
-            <input class="<%= classPrefix %>numeric-field" value="<%= grade ? grade.points : '' %>">
-        <% } else { %>
-            <input class="<%= classPrefix %>field-uneditable" value="<%= grade ? grade.points : '' %>" disabled>
-        <% } %>
-    <% } else { %>
-        <input class="<%= classPrefix %>field-uneditable" disabled>
-    <% } %>
-    <% if (!overridable || !grade) { %>
-        <% formulaStore.push({ axis: axis, userId: userId, formula: axis.Axis.points }) %>
-    <% } %>
-</script>
-
-	<link rel="stylesheet" type="text/css" href="/css/shared/gradebook/axis.css" />
-	<link rel="stylesheet" type="text/css" href="/css/lib/combobox.css" />
-	<link rel="stylesheet" type="text/css" href="/css/shared/gradebook/grade-combobox.css" />
-	<link rel="stylesheet" type="text/css" href="/css/gradebook/gradebook.css" />
-	<link rel="stylesheet" type="text/css" href="/css/gradebook/axis-grid.css" />
-
-	<script type="text/javascript" src="/js/lib/jquery.autosize.js"></script>
-	<script type="text/javascript" src="/js/lib/cs50/formula/formula.js"></script>
-	<script type="text/javascript" src="/js/lib/cs50/formula/formula_ast.js"></script>
-	<script type="text/javascript" src="/js/gradebook/axis.js"></script>
-	<script type="text/javascript" src="/js/shared/gradebook/widget.js"></script>
-	<script type="text/javascript" src="/js/shared/gradebook/formula.js"></script>
-	<script type="text/javascript" src="/js/shared/gradebook/sockets.js"></script>
-	<script type="text/javascript" src="/js/lib/cs50/jquery.cs50.hierarchyNavigator.js"></script>
-	<script type="text/javascript" src="/js/lib/cs50/jquery.cs50.hierarchyGrid.js"></script>
-	<script type="text/javascript" src="/js/lib/jquery.combobox.js"></script>
-
-<div class="content-wrapper-outer">
-    <div class="content-wrapper-inner">
-        <div id="gradebook-list">
-            <div id="search-bar">
-                <input id="student-filter" type="search" placeholder="Search for a student..."/>
-                <div class="search-btn-wrapper">
-                    &times;
-                </div>
-            </div>
-            <ul id="groups-list">
-            </ul>
-        </div>
-        <div id="grades-wrapper">
-            <div id="gradebook-axes"></div>
-        </div>
-    </div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11538"><span style="font-size: 8pt;"><span class="axis-name no-indent">1 minute equals 12 bottles</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11539"><span style="font-size: 8pt;"><span class="axis-name no-indent">2 minutes equals 24 bottles</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11540"><span style="font-size: 8pt;"><span class="axis-name no-indent">5 minutes equals 60 bottles</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11541"><span style="font-size: 8pt;"><span class="axis-name no-indent">10 minutes equals 120 bottles</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11542"><span style="font-size: 8pt;"><span class="axis-name no-indent">rejects "foo" minutes</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11543"><span style="font-size: 8pt;"><span class="axis-name no-indent">rejects "" minutes</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11544"><span style="font-size: 8pt;"><span class="axis-name no-indent">rejects "123abc" minutes</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+</ul>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1113">
+<div class="arrow open"><span style="font-size: 8pt;">&nbsp;Mario</span></div>
 </div>
-</body>
-</html>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1115"><span style="font-size: 8pt;"><span class="axis-name no-indent">rejects a height of -1</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1116"><span style="font-size: 8pt;"><span class="axis-name no-indent">handles a height of 0 correctly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1117"><span style="font-size: 8pt;"><span class="axis-name no-indent">handles a height of 1 correctly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1118"><span style="font-size: 8pt;"><span class="axis-name no-indent">handles a height of 2 correctly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1119"><span style="font-size: 8pt;"><span class="axis-name no-indent">handles a height of 23 correctly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1120"><span style="font-size: 8pt;"><span class="axis-name no-indent">rejects a height of 24</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1121"><span style="font-size: 8pt;"><span class="axis-name no-indent">rejects a non-numeric height of "foo"</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1183"><span style="font-size: 8pt;"><span class="axis-name no-indent">rejects a non-numeric height of ""</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+</ul>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1114">
+<div class="arrow open"><span style="font-size: 8pt;">&nbsp;Greedy</span></div>
+</div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1122"><span style="font-size: 8pt;"><span class="axis-name no-indent">input of 0.41 yields output of 4</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1123"><span style="font-size: 8pt;"><span class="axis-name no-indent">input of 0.01 yields output of 1</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1124"><span style="font-size: 8pt;"><span class="axis-name no-indent">input of 0.15 yields output of 2</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1125"><span style="font-size: 8pt;"><span class="axis-name no-indent">input of 1.6 yields output of 7</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1126"><span style="font-size: 8pt;"><span class="axis-name no-indent">input of 23 yields output of 92</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1127"><span style="font-size: 8pt;"><span class="axis-name no-indent">input of 4.2 yields output of 18</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1128"><span style="font-size: 8pt;"><span class="axis-name no-indent">rejects a negative input like -.1</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1129"><span style="font-size: 8pt;"><span class="axis-name no-indent">rejects a non-numeric input of "foo"</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1185"><span class="axis-name no-indent" style="font-size: 8pt;">rejects a non-numeric input of ""&nbsp;<input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td style="width: 10px; text-align: center; height: 673px;"><span style="font-size: 8pt;">1.0</span></td>
+</tr>
+<tr style="height: 548px;">
+<td style="width: 390.625px; text-align: left; height: 548px;">
+<p><span style="font-size: 8pt;">Problem Set 2</span></p>
+<ol>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1130"><span class="axis-name " style="font-size: 8pt;">initials</span></div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1133"><span style="font-size: 8pt;"><span class="axis-name no-indent">outputs "MB" for "Milo Banana"</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1134"><span style="font-size: 8pt;"><span class="axis-name no-indent">outputs "MB" for "milo banana"</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1135"><span style="font-size: 8pt;"><span class="axis-name no-indent">outputs "RTB" for "Robert Thomas Bowden"</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1136"><span style="font-size: 8pt;"><span class="axis-name no-indent">outputs "R" for "ROB"</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1137"><span style="font-size: 8pt;"><span class="axis-name no-indent">outputs "RTB" for "Robert thomas Bowden"</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+</ul>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1131">
+<div class="arrow open"><span style="font-size: 8pt;">&nbsp;caesar</span></div>
+</div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1138"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "a" as "b" using 1 as key</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1139"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "barfoo" as "yxocll" using 23 as key</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1140"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "BARFOO" as "EDUIRR" using 3 as key</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1141"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "BaRFoo" as "FeVJss" using 4 as key</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1142"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "barfoo" as "onesbb" using 65 as key</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1143"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "world, say hello!" as "iadxp, emk tqxxa!" using 12 as key</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1144"><span style="font-size: 8pt;"><span class="axis-name no-indent">handles lack of argv[1]</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+</ul>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1132">
+<div class="arrow open"><span style="font-size: 8pt;">&nbsp;vigenere</span></div>
+</div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1145"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "a" as "a" using "a" as keyword</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1146"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "world, say hello!" as "xoqmd, rby gflkp!" using "baz" as keyword</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1147"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "BaRFoo" as "CaQGon" using "BaZ" as keyword</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1148"><span style="font-size: 8pt;"><span class="axis-name no-indent">encrypts "BARFOO" as "CAQGON" using "BAZ" as keyword</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1149"><span style="font-size: 8pt;"><span class="axis-name no-indent">handles lack of argv[1]</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1150"><span style="font-size: 8pt;"><span class="axis-name no-indent">handles argc &gt; 2</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1151"><span class="axis-name no-indent" style="font-size: 8pt;">rejects "Hax0r2" as keyword&nbsp;<input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td style="width: 10px; text-align: center; height: 548px;"><span style="font-size: 8pt;">1.0</span></td>
+</tr>
+<tr style="height: 532px;">
+<td style="width: 390.625px; text-align: left; height: 532px;">
+<p><span style="font-size: 8pt;">Problem Set 3</span></p>
+<ol>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1153"><span class="axis-name " style="font-size: 8pt;">fifteen</span></div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11525"><span style="font-size: 8pt;"><span class="axis-name no-indent">init initializes 3x3 board correctly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11526"><span style="font-size: 8pt;"><span class="axis-name no-indent">init initializes 4x4 board correctly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11527"><span style="font-size: 8pt;"><span class="axis-name no-indent">3x3 board, move blank up twice</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11528"><span style="font-size: 8pt;"><span class="axis-name no-indent">3x3 board, move blank left twice</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11529"><span style="font-size: 8pt;"><span class="axis-name no-indent">3x3 board, move blank left then right</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11530"><span style="font-size: 8pt;"><span class="axis-name no-indent">3x3 board, move blank up then down</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11531"><span style="font-size: 8pt;"><span class="axis-name no-indent">3x3 board, move up-up-left-down-down-left ...</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11532"><span style="font-size: 8pt;"><span class="axis-name no-indent">3x3 board, from start try to move tile 2, 4, 5, 6, 7, 8</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11533"><span style="font-size: 8pt;"><span class="axis-name no-indent">3x3 board, move blank left (tile 1) then ...</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11534"><span style="font-size: 8pt;"><span class="axis-name no-indent">3x3 board, move blank up (tile 3), then ...&nbsp;</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11535"><span style="font-size: 8pt;"><span class="axis-name no-indent">3x3.txt wins the 3x3 board</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11536"><span style="font-size: 8pt;"><span class="axis-name no-indent">4x4.txt wins the 4x4 board</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+</ul>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1152">
+<div class="arrow open"><span style="font-size: 8pt;">&nbsp;find</span></div>
+</div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1154"><span style="font-size: 8pt;"><span class="axis-name no-indent">finds 42 in {42,43,44}</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1155"><span style="font-size: 8pt;"><span class="axis-name no-indent">finds 42 in {41,42,43}</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1156"><span style="font-size: 8pt;"><span class="axis-name no-indent">finds 42 in {40,41,42}</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1157"><span style="font-size: 8pt;"><span class="axis-name no-indent">finds 42 in {41,42,43,44}</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1186"><span style="font-size: 8pt;"><span class="axis-name no-indent">finds 42 in {40,41,42,43}</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1158"><span style="font-size: 8pt;"><span class="axis-name no-indent">finds 42 in {39,40,41,42}</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1159"><span style="font-size: 8pt;"><span class="axis-name no-indent">doesn't find 42 in {39,40,41}</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1160"><span class="axis-name no-indent" style="font-size: 8pt;">doesn't find 42 in {39,40,41,43}<input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td style="width: 10px; text-align: center; height: 532px;">1.0</td>
+</tr>
+<tr style="height: 279px;">
+<td style="width: 390.625px; text-align: left; height: 279px;">
+<p>Problem Set 4</p>
+<ol>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1162"><span class="axis-name ">resize</span></div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1164"><span class="axis-name no-indent">doesn't resize 1x1-pixel BMP when f is 1.0</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1165"><span class="axis-name no-indent">resizes 1x1-pixel BMP to 2x2 correctly when f is 2.0</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1166"><span class="axis-name no-indent">resizes 1x1-pixel BMP to 3x3 correctly when f is 3.0</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1167"><span class="axis-name no-indent">resizes 1x1-pixel BMP to 4x4 correctly when f is 4.0</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1168"><span class="axis-name no-indent">resizes 1x1-pixel BMP to 5x5 correctly when f is 5.0</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1169"><span class="axis-name no-indent">resizes 2x2-pixel BMP to 4x4 correctly when f is 2.0</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+</ul>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1163">
+<div class="arrow open">&nbsp;recover</div>
+</div>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1173"><span class="axis-name no-indent">recovers 000.jpg correctly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1174"><span class="axis-name no-indent">recovers middle files correctly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="1175"><span class="axis-name no-indent">recovers last file correctly<input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+</ul>
+</li>
+</ol>
+</td>
+<td style="width: 10px; text-align: center; height: 279px;">1.0</td>
+</tr>
+<tr style="height: 184px;">
+<td style="width: 390.625px; text-align: left; height: 184px;">
+<p>&nbsp;Problem Set 5</p>
+<ul>
+<li><span class="axis-name no-indent">handles most basic words properly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></li>
+<li><span class="axis-name no-indent">handles min length (1-char) words</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></li>
+<li class="axis-row-wrapper" data-axis-id="1178"><span class="axis-name no-indent">spell-checking is case-insensitive</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></li>
+<li class="axis-row-wrapper" data-axis-id="1179"><span class="axis-name no-indent">handles max length (45-char) words</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></li>
+<li class="axis-row-wrapper" data-axis-id="1180"><span class="axis-name no-indent">handles possessives properly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></li>
+<li class="axis-row-wrapper" data-axis-id="1181"><span class="axis-name no-indent">handles substrings properly</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></li>
+</ul>
+</td>
+<td style="width: 10px; text-align: center; height: 184px;">&nbsp;1.0</td>
+</tr>
+<tr style="height: 647px;">
+<td style="width: 390.625px; text-align: left; height: 647px;">
+<p>&nbsp;Problem Set 6</p>
+<ul>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11546"><span class="axis-name no-indent">HTTP/1.0 returns error code 505</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11547"><span class="axis-name no-indent">Method of 'abcGET' returns error code 405</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11548"><span class="axis-name no-indent">Method of 'GETabc' returns error code 405</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11549"><span class="axis-name no-indent">request-target without starting '/' returns error code 501</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11550"><span class="axis-name no-indent">request-target of abc/hello.php returns error code 501</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11551"><span class="axis-name no-indent">Requesting cat.exe returns error code 501</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11552"><span class="axis-name no-indent">Requesting non-existant file returns error code 404</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11553"><span class="axis-name no-indent">Requesting request-target with " returns error code 400</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11554"><span class="axis-name no-indent">Two spaces after GET returns error code</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11555"><span class="axis-name no-indent">A space within the request target returns error code</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11557"><span class="axis-name no-indent">Two spaces before HTTP/1.1 returns error code</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11558"><span class="axis-name no-indent">Requesting two files in a row (cat.html then cat.jpg) succeeds</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11559"><span class="axis-name no-indent">Requesting cat.jpg returns 200, image/jpeg, and correct image</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11560"><span class="axis-name no-indent">Requesting cat.html returns 200, text/html, and correct file</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11561"><span class="axis-name no-indent">Requesting cat2.HTML returns 200, text/html, and correct file</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11562"><span class="axis-name no-indent">Requesting cat3.HtMl returns 200, text/html, and correct file</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11564"><span class="axis-name no-indent">Requesting cat.gif returns 200, image/gif, and correct file</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11565"><span class="axis-name no-indent">Requesting favicon.ico returns 200, image/x-icon, and correct file</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11566"><span class="axis-name no-indent">Requesting test.css returns 200, text/css, and correct file</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11567"><span class="axis-name no-indent">Requesting test.js returns 200, text/javascript, and correct file</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11568"><span class="axis-name no-indent">Requesting hello.php returns 200, text/html, and correct output</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11569"><span class="axis-name no-indent">Requesting hello.php? returns 200, text/html, and correct output</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11570"><span class="axis-name no-indent">Requesting hello.php?name=Alice returns 200, text/html, and correct output</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11571"><span class="axis-name no-indent">Requesting /test redirects to /test/</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11572"><span class="axis-name no-indent">Requesting /test/ outputs /test/index.html</span><span class="axis-grade"><input class="field-uneditable" disabled="disabled" type="text" value="1" /></span></div>
+</li>
+<li>
+<div class="axis-row-wrapper" data-axis-id="11573"><span class="axis-name no-indent">Requesting directory containing index.php outputs index.php</span></div>
+</li>
+</ul>
+</td>
+<td style="width: 10px; text-align: center; height: 647px;">&nbsp;1.0</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 390.625px; text-align: left; height: 13px;">&nbsp;Problem Set 7</td>
+<td style="width: 10px; height: 13px; text-align: center;">&nbsp;1.0</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 390.625px; text-align: left; height: 13px;">&nbsp;Problem Set 8</td>
+<td style="width: 10px; height: 13px; text-align: center;">&nbsp;1.0</td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 390.625px; text-align: left; height: 13px;">&nbsp;Final Project</td>
+<td style="width: 10px; height: 13px; text-align: center;">&nbsp;1.0</td>
+</tr>
+</tbody>
+</table>
+<p><span class="axis-name no-indent" style="display: inline-block; vertical-align: middle; margin-left: 5px; padding-left: 4px; margin-right: 250px; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22.399999618530273px; background-color: #f6f6f6;">&nbsp;</span></p>
 
 
 
