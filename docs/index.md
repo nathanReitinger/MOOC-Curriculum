@@ -332,7 +332,7 @@ This Specialization covers intermediate topics in software development. You’ll
 </ul>
 </li>
 </ul>
-<p>&nbsp;<strong>Course 3: Advanced Data Structures in Java</strong></p>
+<div class="course-title"><strong>Course 3: Advanced Data Structures in Java</strong>
 <ul>
 <li>Week 1
 <ul>
@@ -360,7 +360,7 @@ This Specialization covers intermediate topics in software development. You’ll
 </ul>
 </li>
 </ul>
-<p><strong>Course 4:&nbsp;Mastering the Software Engineering Interview</strong></p>
+<div class="course-title"><strong>Course 4: Mastering the Software Engineering Interview</strong>
 <ul>
 <li>Week 1
 <ul>
@@ -390,18 +390,66 @@ This course is an introduction to Logic from a computational perspective. It sho
 
 <h3 id="and-a-nested-list">Syllabus:</h3>
 <ul>
-<li>Chapter 1&nbsp;- Introduction</li>
-<li>Chapter 2&nbsp;- Propositional Logic</li>
-<li>Chapter 3&nbsp;- Propositional Analysis</li>
-<li>Chapter 4&nbsp;- Propositional Proofs</li>
-<li>Chapter 5&nbsp;- Propositional Resolution</li>
-<li>Chapter 6&nbsp;- Relational Logic</li>
-<li>Chapter 7&nbsp;- Relational Analysis</li>
-<li>Chapter 8&nbsp;- Relational Proofs</li>
-<li>Chapter 9&nbsp;- Herbrand Logic</li>
-<li>Chapter 10&nbsp;- Herbrand Proofs</li>
-<li>Chapter 11&nbsp;- Induction</li>
-<li>Chapter 12&nbsp;- Resolution</li>
+<li>Week&nbsp;1
+<ul>
+<li>Introduction</li>
+</ul>
+</li>
+<li>Week&nbsp;2
+<ul>
+<li>Propositional Logic</li>
+</ul>
+</li>
+<li>Week&nbsp;3
+<ul>
+<li>Propositional Analysis</li>
+</ul>
+</li>
+<li>Week&nbsp;4
+<ul>
+<li>Propositional Proofs</li>
+</ul>
+</li>
+<li>Week&nbsp;5
+<ul>
+<li>Propositional Resolution</li>
+</ul>
+</li>
+<li>Week&nbsp;6
+<ul>
+<li>Relational Logic</li>
+</ul>
+</li>
+<li>Week&nbsp;7
+<ul>
+<li>Relational Analysis</li>
+</ul>
+</li>
+<li>Week&nbsp;8
+<ul>
+<li>Relational Proofs</li>
+</ul>
+</li>
+<li>Week&nbsp;9
+<ul>
+<li>Herbrand Logic</li>
+</ul>
+</li>
+<li>Week&nbsp;10
+<ul>
+<li>Herbrand Proofs</li>
+</ul>
+</li>
+<li>Week&nbsp;11
+<ul>
+<li>Induction</li>
+</ul>
+</li>
+<li>Week&nbsp;12
+<ul>
+<li>Resolution</li>
+</ul>
+</li>
 </ul>
 
 # Probability: Basic Concepts & Discrete Random Variables
