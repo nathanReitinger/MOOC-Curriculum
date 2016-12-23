@@ -267,7 +267,7 @@ Introduction to the intellectual enterprises of computer science and the art of 
 # Object Oriented Programming
 This Specialization covers intermediate topics in software development. You’ll learn object-oriented programming principles that will allow you to use Java to its full potential, and you’ll implement data structures and algorithms for organizing large amounts of data in a way that is both efficient and easy to work with. You’ll also practice critically evaluating your own code, and you’ll build technical communication skills that will help you prepare for job interviews and collaborative work as a software engineer.
 
-<h3 id="and-a-nested-list"><span style="font-size: 10pt;">Syllabus:</span></h3>
+<h3 id="and-a-nested-list">Syllabus:</h3>
 <h3><span style="font-size: 10pt;"><strong>Course 1: Object Oriented Programming in Java</strong></span></h3>
 <ul>
 <li>Week 1
