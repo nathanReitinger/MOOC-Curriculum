@@ -267,40 +267,40 @@ Introduction to the intellectual enterprises of computer science and the art of 
 # Object Oriented Programming
 This Specialization covers intermediate topics in software development. You’ll learn object-oriented programming principles that will allow you to use Java to its full potential, and you’ll implement data structures and algorithms for organizing large amounts of data in a way that is both efficient and easy to work with. You’ll also practice critically evaluating your own code, and you’ll build technical communication skills that will help you prepare for job interviews and collaborative work as a software engineer.
 
-<h3 id="and-a-nested-list">Syllabus:</h3>
-<h3><span style="font-size: 8pt;"><strong>Course 1: Object Oriented Programming in Java</strong></span></h3>
+<h3 id="and-a-nested-list"><span style="font-size: 10pt;">Syllabus:</span></h3>
+<h3><span style="font-size: 10pt;"><strong>Course 1: Object Oriented Programming in Java</strong></span></h3>
 <ul>
-<li class="course-title"><span style="font-size: 8pt;">Week 1</span>
+<li class="course-title"><span style="font-size: 10pt;">Week 1</span>
 <ul>
 <li class="course-title">
-<div class="module-name"><span style="font-size: 8pt;">Welcome and Project Overview: Visualizing Data</span></div>
+<div class="module-name"><span style="font-size: 10pt;">Welcome and Project Overview: Visualizing Data</span></div>
 </li>
-<li class="course-title"><span style="font-size: 8pt;">Objects, Memory Models, and Scope</span></li>
+<li class="course-title"><span style="font-size: 10pt;">Objects, Memory Models, and Scope</span></li>
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 8pt;">Week 2</span>
+<li class="course-title"><span style="font-size: 10pt;">Week 2</span>
 <ul>
-<li class="course-title"><span style="font-size: 8pt;">Graphical output: Creating GUIs and Displaying Data</span></li>
+<li class="course-title"><span style="font-size: 10pt;">Graphical output: Creating GUIs and Displaying Data</span></li>
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 8pt;">Week 3</span>
+<li class="course-title"><span style="font-size: 10pt;">Week 3</span>
 <ul>
-<li class="course-title"><span style="font-size: 8pt;">Inheritance</span></li>
+<li class="course-title"><span style="font-size: 10pt;">Inheritance</span></li>
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 8pt;">Week 4</span>
+<li class="course-title"><span style="font-size: 10pt;">Week 4</span>
 <ul>
-<li class="course-title"><span style="font-size: 8pt;">GUIs: Responding to User Events</span></li>
+<li class="course-title"><span style="font-size: 10pt;">GUIs: Responding to User Events</span></li>
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 8pt;">Week 5</span>
+<li class="course-title"><span style="font-size: 10pt;">Week 5</span>
 <ul>
-<li class="course-title"><span style="font-size: 8pt;">Searching and Sorting: From Code to Algorithms</span></li>
+<li class="course-title"><span style="font-size: 10pt;">Searching and Sorting: From Code to Algorithms</span></li>
 </ul>
 </li>
-<li class="course-title"><span style="font-size: 8pt;">Week 6</span>
+<li class="course-title"><span style="font-size: 10pt;">Week 6</span>
 <ul>
-<li class="course-title"><span style="font-size: 8pt;">Finishing Up</span></li>
+<li class="course-title"><span style="font-size: 10pt;">Finishing Up</span></li>
 </ul>
 </li>
 </ul>
