@@ -270,37 +270,35 @@ This Specialization covers intermediate topics in software development. You’ll
 <h3 id="and-a-nested-list"><span style="font-size: 10pt;">Syllabus:</span></h3>
 <h3><span style="font-size: 10pt;"><strong>Course 1: Object Oriented Programming in Java</strong></span></h3>
 <ul>
-<li class="course-title">Week 1
+<li>Week 1
 <ul>
-<li class="course-title">
-<div class="module-name">Welcome and Project Overview: Visualizing Data
-</li>
-<li class="course-title">Objects, Memory Models, and Scope
+<li class="course-title">Welcome and Project Overview: Visualizing Data</li>
+<li class="course-title">Objects, Memory Models, and Scope</li>
 </ul>
 </li>
 <li class="course-title">Week 2
 <ul>
-<li class="course-title">Graphical output: Creating GUIs and Displaying Data
+<li class="course-title">Graphical output: Creating GUIs and Displaying Data</li>
 </ul>
 </li>
 <li class="course-title">Week 3
 <ul>
-<li class="course-title">Inheritance
+<li class="course-title">Inheritance</li>
 </ul>
 </li>
 <li class="course-title">Week 4
 <ul>
-<li class="course-title">GUIs: Responding to User Events
+<li class="course-title">GUIs: Responding to User Events</li>
 </ul>
 </li>
 <li class="course-title">Week 5
 <ul>
-<li class="course-title">Searching and Sorting: From Code to Algorithms
+<li class="course-title">Searching and Sorting: From Code to Algorithms</li>
 </ul>
 </li>
 <li class="course-title">Week 6
 <ul>
-<li class="course-title">Finishing Up
+<li class="course-title">Finishing Up</li>
 </ul>
 </li>
 </ul>
