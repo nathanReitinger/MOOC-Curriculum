@@ -13,6 +13,7 @@ As an overview, these are the courses I have taken:
 | Introduction to Logic                                                                | Stanford                             |  [100%](https://github.com/nathanReitinger/MOOC-Curriculum/blob/master/grades/Stanford_Introduction%20to%20Logic%20%5Bgrades%5D.pdf)    |
 | Probability                                                                          | Purdue                               |  [99%](https://github.com/nathanReitinger/MOOC-Curriculum/blob/master/grades/Purdue_Probability%20%5Bgrades%5D.pdf)     |
 | [Algorithms, Part I](https://github.com/nathanReitinger/Algorithms)                  | Princeton                            |  [100%](https://github.com/nathanReitinger/MOOC-Curriculum/blob/master/grades/Princeton_Algorithms%20%5Bgrades%5D.pdf)    |
+| Using Python for Research                                                  | Harvard  |  pending    |
 
 
 
