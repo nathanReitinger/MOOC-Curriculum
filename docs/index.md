@@ -196,6 +196,12 @@ div{
 					<td class='text ' data-title='Institution'>Princeton</td>
 					<td class='text ' data-title='Platform'>Coursera</td>
 				</tr>
+				
+				<tr class=''>
+					<td class='text ' data-title='Course'>Using Python for Research</td>
+					<td class='text ' data-title='Institution'>Harvard</td>
+					<td class='text ' data-title='Platform'>Edx</td>
+				</tr>
 			
 			</tbody>
 		</table>
