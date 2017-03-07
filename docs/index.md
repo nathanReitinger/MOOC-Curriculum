@@ -535,3 +535,40 @@ This course covers the essential information that every serious programmer needs
 </ul>
 </li>
 </ul>
+
+# Using Python For Research
+This course bridges the gap between introductory and advanced courses in Python. While there are many excellent introductory Python courses available, most typically do not go deep enough for you to apply your Python skills to research projects. In this course, after first reviewing the basics of Python 3, we learn about tools commonly used in research settings.
+
+Using a combination of a guided introduction and more independent in-depth exploration, you will get to practice your new Python skills with various case studies chosen for their scientific breadth and their coverage of different Python features.
+
+<h3 id="and-a-nested-list">Syllabus:</h3>
+<ul>
+<li>Week 1
+<ul>
+<li>Objects and Methods</li>
+<li>Sequence Objects</li>
+<li>Manipulating Objects</li>
+</ul>
+</li>
+<li>Week 2
+<ul>
+<li>Scope Rules and Classes</li>
+<li>NumPy</li>
+<li>Matplotlib and Pyplot </li>
+<li>Randomness and Time</li>
+</ul>
+</li>
+<li>Week 3
+<ul>
+<li>DNA Translation (doc strings, file I/O) </li>
+<li>Language Processing (word frequency statistics, matplot and pyplot) </li>
+<li>Introduction to Classification (creaitng synthetic data, nearest neighbor classifications, meshgrid, enumerate) </li>
+</ul>
+</li>
+<li>Week 4
+<ul>
+<li>Classifying Whiskies (pandas, Pearson correlation) </li>
+<li>Bird Migration (plotting with Bokeh, adjacency matrices, spectral co-clustering)</li>
+<li>Social Network Analysis (networkX, Erdős-Rényi graphs)</li>
+</ul>
+</li>
