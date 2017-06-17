@@ -1,6 +1,5 @@
 
 Here are some screen shots from the site! 
       
-![Alt text](https://github.com/nathanReitinger/CS50x/blob/master/Pset9%20Screens_0.png "Pset9 Front Page")
-<hr>
-![Alt text](https://github.com/nathanReitinger/CS50x/blob/master/Pset9%20Screens_1.png "Pset9 Front Page")
+![pie](https://github.com/nathanReitinger/MOOC-Curriculum/blob/master/classes/CS50x/Pset9%20Screens_0.png)
+![timeline](https://github.com/nathanReitinger/MOOC-Curriculum/blob/master/classes/CS50x/Pset9%20Screens_1.png)
